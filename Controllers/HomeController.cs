@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +16,8 @@ namespace WebApplication1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            var result = SomeCommonCode.AddSome(5, 5);
+            ViewBag.Message = $"Adding 5 and 5 is {result}";
 
             return View();
         }
