@@ -1,0 +1,3 @@
+[submodule "CommonStatic"]
+	path = CommonStatic
+	url = git@github.com:ohritz/lab_sos_static.git
